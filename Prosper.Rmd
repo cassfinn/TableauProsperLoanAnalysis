@@ -1,0 +1,77 @@
+---
+title: "Prosper Analysis"
+author: "Claudia Cassidy"
+date: "12/16/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Prosper is a company that services loans. It allows people to borrow money for a term of 3 or 5 years and within a range of $2,000 to $35,000. The loans are funded by investors who select loans to invest in on Prosper's website. Investors profit by the interest charged as the loans are repaid by borrowers. Investors can invest as little as $25 per loan and can select many loans to invest in. Each loan can be funded by a pool of many investors.
+<br>
+Borrowers are categorized by credit score. The better the credit score, the lower the risk of a borrower defaulting on a loan but also the lower the profit margin as interest rates are lower for borrowers with better credit scores. This analysis will illustrate the risk vs profit potential for investors based on borrower credit scores. It will be further broken down by the borrower's income, debt to income ratio, state and occupation.
+<br>
+
+
+Step 1: clean the data.  Remove nulls and NAs
+
+
+
+
+```{r}
+library(knitr)
+
+library(tidyr)
+library(dplyr)
+library(plyr)
+library(reshape2)
+library(RColorBrewer)
+library(gridExtra)
+library(maps)
+library(ggplot2)
+library(leaflet)
+library(kableExtra)
+library(rio)
+install_formats()
+
+# Import the data
+prosperData <- read.csv(file="prosperLoanData.csv", header=TRUE, sep=",")
+
+df <- data.frame(prosperData)
+
+summary(df)
+
+
+### Select a subset of the available columns:
+ccCols <- c("CreditGrade","Term","LoanStatus","ClosedDate","BorrowerAPR", 
+            "BorrowerRate","LenderYield","EstimatedEffectiveYield",
+            "EstimatedLoss", "EstimatedReturn", "ListingCategory..numeric.",
+            "ProsperScore","BorrowerState","Occupation","EmploymentStatus","CreditScoreRangeLower",
+            "CreditScoreRangeUpper","OpenRevolvingMonthlyPayment","RevolvingCreditBalance",
+            "IncomeRange","StatedMonthlyIncome","LoanOriginalAmount","LoanOriginationDate","MonthlyLoanPayment")
+
+cc1 <- df[ccCols]
+
+cc1
+
+write.csv(cc1, file = "PropserLean.csv")
+
+
+#prosperDataCleaned <- read.csv(file="prosperLoanData.csv", header=TRUE, sep=",")
+
+
+```
+
+
+```{r pressure, echo=FALSE}
+
+library(dplyr)
+library(tidyr)
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
