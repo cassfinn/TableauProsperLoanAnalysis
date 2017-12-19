@@ -1,7 +1,7 @@
 Prosper Analysis with Tableau
 =============================
 
-<br><br>
+<br>
 
 Summary
 -------
