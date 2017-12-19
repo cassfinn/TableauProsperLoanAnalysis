@@ -6,7 +6,7 @@ Prosper Analysis with Tableau
 Summary
 -------
 
-Prosper is a company that services loans, allowing borrowers to borrow money for a term of 3 or 5 years and within a range of $2,000 to $35,000. The loans are funded by a pool of investors who can invest in multiple loans and profit by the interest charged as the loans are repaid by borrowers. The better a borrower's credit score, the lower the risk of a borrower defaulting on a loan but also the lower the profit margin as interest rates are lowest for borrowers with better credit scores. This analysis will illustrate the risk vs profit potential for investors based on borrowers' credit scores, stated monthly income, monthly revoling debt, and occupation. <br>
+Prosper is a company that services loans, allowing borrowers to borrow money for a term of 3 or 5 years and within a range of $2,000 to $35,000. The loans are funded by a pool of investors who can invest in multiple loans and profit by the interest charged as the loans are repaid by borrowers. The better a borrower's credit score, the lower the risk of a borrower defaulting on a loan but also the lower the profit margin as interest rates are lowest for borrowers with better credit scores. This analysis will illustrate the risk vs profit potential for investors based on borrowers' credit scores, stated monthly income, monthly revoling debt, and reason for the loan. <br>
 
 Design
 ------
