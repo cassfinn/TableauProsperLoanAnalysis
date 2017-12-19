@@ -38,10 +38,10 @@ I noticed that when people looked at the charts, reading the legend at a 90 degr
 Chart: Median Lender Yield by Borrower Credit Rating<br>
 The most important field to the investor is the Yield on the loan by Credit Grade.  To make that column stand out, I made the other column (Median Borrower APR) gray while the Median Lender Yield is orange.
 <br><br>
-Before I got feedback, this chart showed both bars as equally prominent.  After getting feedback, I grayed out the less important bar to the investor and added color and highlights to the most important information on the chart.
-![Before and After]("chart1beforeafter.png"")
-<br><br><br>
-Other Improvements:<br>
+Improvements:<br>
+- Before I got feedback, this chart showed both bars as equally prominent.  After getting feedback, I grayed out the less important bar to the investor and added color and highlights to the most important information on the chart.
+![Before and After](chart1beforeafter.png)
+<br><br>
 - For the Loans Completed vs Defaulted chart, after getting feedback I added percentage labels to the bars on the chart to further show that borrowers with lower credit grades default at a much higher rate than those with excellent credit grades.
 <br><br>
 - Average Loan Amount and Reason for Loan also shows the average original loan amount all grouped by credit grade. To make the groupings clearer, I added a darker separation line between each group.
